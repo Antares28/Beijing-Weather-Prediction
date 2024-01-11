@@ -9,7 +9,7 @@ def Merge(AllBJAirQualityData, AllBJWeatherData):
     merged_data = pd.merge(AllBJAirQualityData, AllBJWeatherData, on='Date', how='inner')
     
     # import to csv
-    merged_data.to_csv('Beijing Weather.csv')
+    merged_data.to_csv('Beijing_Weather.csv')
 
  
 
