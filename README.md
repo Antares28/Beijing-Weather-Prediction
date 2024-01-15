@@ -28,7 +28,11 @@ Since we have a large dataset and our high dimensionality feature of the dataset
 For our training model, MAE is 0.04. It can be thought of as a good regression model. 
 ## How to run the code
 1. Download the dataset: in data folder.
+   
 2.feature_pipline.ipynb: Download the feature processing file and try to use this file to preprocess the dataset.
+
 3.training_pipeline.ipynb : Download the file and use it to train a random forest regression model using orginial data. The metric we chose is MAE (Mean Absolute Error)
-5.app.py: The code for the demo on huggingface
-6.requirments.txt: It shows the needed version for some libraries.
+
+4.app.py: The code for the demo on huggingface
+
+5.requirments.txt: It shows the needed version for some libraries.
