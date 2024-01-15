@@ -3,7 +3,7 @@
 ## Summary
 
 ## The dataset
-- Data Crawler: Use `AirQuality_Crawler.py` and `Weather_Crawler.py` to get Beijing's weather and air quality data 
+- Data Crawler: Use `AirQuality_Crawler.py` and `Weather_Crawler.py` to get Beijing's weather and air quality data. They are saved in `DataCrawler` folder.
 ## Our method
 
 ## Our results
