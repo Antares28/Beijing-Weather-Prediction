@@ -1,11 +1,12 @@
 # Beijing Weather Prediction
-
+Project group: 12
+group member: WEI Jian, LI Xinyang
 ## Summary
 
 ## The dataset
+
 - Data Crawler: Use `AirQuality_Crawler.py` and `Weather_Crawler.py` to get Beijing's weather and air quality data. They are saved in `DataCrawler` folder.
-- Data: 'Beijing Weather Crawler.xlsx' and 'Beijing Air Quality Crawler.xlsx' are collected using the data crawler. We merge two parts of the data named as 'Beijing_Weather.csv'. All data are in `data` folder.
-- 
+- Data: 'Beijing Weather Crawler.xlsx' and 'Beijing Air Quality Crawler.xlsx' are collected using the data crawler. We merge two parts of the data named 'Beijing_Weather.csv'. All data are in `data` folder.
 ## Our method
 
 ## Our results
