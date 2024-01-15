@@ -8,21 +8,21 @@ We use data crawling to get weather data in Beijing. For the data processing par
 
 Based on the historical weather and air condition data, we try to predict the air quality level for the present. We compare two algorithms, and finally, we choose the optimal algorithm and finish the fine-tuning process of hyperparameters.
 
-AirQuality_Crawler.py: 2011-2024 Beijing's air quality data. 
+`AirQuality_Crawler.py`: 2011-2024 Beijing's air quality data. 
 
-Weather_Crawler.py: 2011-2024 Beijing's weather data. 
+`Weather_Crawler.py`: 2011-2024 Beijing's weather data. 
 
-MergeTwoExcel.py: Merge Beijing's air quality data with weather data from 2011 to 2024. 
+`MergeTwoExcel.py`: Merge Beijing's air quality data with weather data from 2011 to 2024. 
 
-WeatherPie.py: Count the number of sunny, rainy, cloudy, snowy, hazy, and sand-raising days yearly, and draw a pie chart.
+`WeatherPie.py`: Count the number of sunny, rainy, cloudy, snowy, hazy, and sand-raising days yearly, and draw a pie chart.
 
-feature-pipeline.ipynb: preprocess features and store the feature group into hopsworks.
+`feature-pipeline.ipynb`: preprocess features and store the feature group into hopsworks.
 
-training-pipeline.ipynb: use RandomForestRegressor algorithm to train the data, the model is saved as `random_forest_regressor_model.pkl` in github and huggingface.
+`training-pipeline.ipynb`: use RandomForestRegressor algorithm to train the data, the model is saved as `random_forest_regressor_model.pkl` in github and huggingface.
 
-app.py: online interface on huggingface.
+`app.py`: online interface on huggingface.
 
-requirements.txt: needed libraries to run app.py on huggingface.
+`requirements.txt`: needed libraries to run app.py on huggingface.
 
 ## The dataset
 - Data Crawler: Use `AirQuality_Crawler.py` and `Weather_Crawler.py` to get Beijing's weather and air quality data. They are saved in `DataCrawler` folder.
