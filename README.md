@@ -25,6 +25,7 @@ Based on the historical weather and air condition data, we try to predict the ai
 `requirements.txt`: needed libraries to run app.py on huggingface.
 
 ## The dataset
+Data sources: http://www.tianqihoubao.com/lishi/beijing/20240115.html, http://www.tianqihoubao.com/aqi/beijing.html
 - Data Crawler: Use `AirQuality_Crawler.py` and `Weather_Crawler.py` to get Beijing's weather and air quality data. They are saved in `DataCrawler` folder.
 - Data: `Beijing Weather Crawler.xlsx` and `Beijing Air Quality Crawler.xlsx` are collected using the data crawler. We merge two parts of the data named `Beijing_Weather.csv`. All data are in `data` folder.
 - Data Preprosessing: We drop some unrelated columns and use numerical encoding to translate characters into numbers.
