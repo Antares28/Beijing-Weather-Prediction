@@ -35,6 +35,7 @@ Since we have a large dataset and our high dimensionality feature of the dataset
 For our training model, MAE is 0.04. It can be thought of as a good regression model. 
 ## User Interface
 online interface on huggingface: https://huggingface.co/spaces/Antares28/weather
+![image](https://github.com/Antares28/Beijing_Weather_Prediction/blob/main/imgs/Gradio.png)
 ## How to run the code
 
 1. Download the dataset: in data folder.
