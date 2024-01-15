@@ -8,15 +8,21 @@ We use data crawling to get weather data in Beijing. For the data processing par
 
 Based on the historical weather and air condition data, we try to predict the air quality level for the present. We compare two algorithms, and finally, we choose the optimal algorithm and finish the fine-tuning process of hyperparameters.
 
-DataCrawler.py: 2011-2024 Beijing's weather data. 
+AirQuality_Crawler.py: 2011-2024 Beijing's air quality data. 
 
-MergeTwoExcel.py: Merge Beijing's air quality data with weather data from 2011 to 2019. 
+Weather_Crawler.py: 2011-2024 Beijing's weather data. 
+
+MergeTwoExcel.py: Merge Beijing's air quality data with weather data from 2011 to 2024. 
 
 WeatherPie.py: Count the number of sunny, rainy, cloudy, snowy, hazy, and sand-raising days yearly, and draw a pie chart.
 
-ContinuePollution.py: Count the times which have continuous pollution days each year
+feature-pipeline.ipynb: preprocess features and store the feature group into hopsworks.
 
-Prediction.py: We predict the air quality level based on the historical weather data and air quality data. 
+training-pipeline.ipynb: use RandomForestRegressor algorithm to train the data, the model is saved as `random_forest_regressor_model.pkl` in github and huggingface.
+
+app.py: online interface on huggingface.
+
+requirements.txt: needed libraries to run app.py on huggingface.
 
 ## The dataset
 - Data Crawler: Use `AirQuality_Crawler.py` and `Weather_Crawler.py` to get Beijing's weather and air quality data. They are saved in `DataCrawler` folder.
@@ -27,6 +33,8 @@ We use `Random Forest`for our regression work.
 Since we have a large dataset and our high dimensionality feature of the dataset. We try to use random forest to finish the regression problem. Its prediction result is good as we think.
 ## Our results
 For our training model, MAE is 0.04. It can be thought of as a good regression model. 
+## User Interface
+online interface on huggingface: https://huggingface.co/spaces/Antares28/weather
 ## How to run the code
 
 1. Download the dataset: in data folder.
