@@ -1,0 +1,6 @@
+hopsworks
+joblib
+scikit-learn==1.3.0
+seaborn
+dataframe-image
+gradio==3.14
